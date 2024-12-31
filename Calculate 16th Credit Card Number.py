@@ -1,8 +1,8 @@
-kart = list(input())
-del kart[15]
+card = list(input())
+del card[15]
 sum = 0
 j = 1
-for i in kart:
+for i in card:
     int_i = int(i)
     if j % 2 == 0:
         sum += int_i
@@ -15,4 +15,7 @@ for i in kart:
 i16 = 10 - (sum % 10)
 if i16 == 10:
     i16 = 0
-print(i16)
+
+card.append(str(i16))
+new_card = ''.join(card)
+print('card =',new_card)
